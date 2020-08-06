@@ -14,6 +14,7 @@ class BusInfoPage extends Component {
         return (
             <Fragment>
                 <div>hello world</div>
+                <div>commit test</div>
             </Fragment>
         )
     }
