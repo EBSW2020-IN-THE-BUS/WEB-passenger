@@ -1,77 +1,48 @@
-.outLine {
-    background-color: #9EC75D;
-    width: 1030px;
-    height: 430px;
-    padding: 10px 0;
-}
-.background {
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    border-radius: 7px;
-    padding: 10px;
-    margin: 20px;
-    width: 970px;
-    height: 383px;
-}
-.left {
-    flex: 1;
-    color: black;
+html, body {
+    margin: 0;
+    padding: 0;
 }
 
-.left h1 {
-    text-align: center;
-}
-.table-thead{
-    z-index: 9999;
+.RouteMap .out-background {
+    background-color: #9EC75D;
+    width: 1024px;
+    height: 600px;
+    padding: 0;
     position: absolute;
     top: 0;
     left: 0;
-    right: 0;
-    font-size: 13.5px;
-    height: 30px;
-    white-space: nowrap;
-    width: 435px;
 }
-.table-thead > div{
-    position: relative;
-    height: 25px;
-    display: inline-block;
-    padding-top: 4px;
-    text-align: center;
-    border-right: 1px solid #fff;
-}
-.table-body{
-    position: absolute;
-    top: 30px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    font-size: 13px;
-    /* white-space: nowrap; */
-}
-.table-body > div{
-    position: relative;
-    height: 25px;
-    display: inline-block;
-    padding: 5px 0;
-    text-align: center;
-    border-bottom: 1px solid #f1f1f1;
-    border-right: 1px solid #fff;
-}
-.table-time {
-    border-right: none;
-}
-.content {
-    width: 445px;
-    height: 268px;
+
+.RouteMap .inside-background {
+    background-color: white;
+    border-radius: 7px;
     padding: 15px;
-    margin: 5px;
-    background-color: #E2EECE;
-    border-radius: 5px;
+    position: relative;
+    top: 20px;
+    margin: 0 20px;
+    width: 954px;
+    height: 363px;
 }
-#map {
-    margin-left: 10px;
-    width: 480px;
-    height: 383px;
+
+.inside-background h1 {
+    text-align: center;
+    font-size: 40px;
+    margin: 0;
+}
+
+.route-line {
+    width: 100%;
+}
+.useScroll_scroll__1bR1m .useScroll_scrollInnerContainer__2E6ME{
+    height: 300px;
+}
+.useScroll_scrollContentWrapper__1mrFS {
+    height: 300px;
+}
+.inside-background .route-btn {
+    width: 100%;
+    height: 200px;
+    margin-top: 50px;
+     border: 7px solid #1CBFF0;
+     border-radius: 100px;
 }
