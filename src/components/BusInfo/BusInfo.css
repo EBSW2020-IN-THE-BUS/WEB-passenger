@@ -1,0 +1,126 @@
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.BusInfo .out-background {
+    background-color: #9EC75D;
+    width: 1024px;
+    height: 600px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.BusInfo .inside-background {
+    background-color: white;
+    border-radius: 7px;
+    padding: 15px;
+    position: relative;
+    top: 20px;
+    margin: 0 20px;
+    width: 954px;
+    height: 363px;
+}
+
+.driver_info {
+    display: flex;
+    flex-direction: row;
+}
+
+.driver_picture img {
+    margin: 10px 30px 10px 30px;
+    width: 170px;
+    height: 160px;
+}
+
+.driverInfo_text #name {
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 1.8em;
+}
+.driverInfo_text  p {
+    text-align: center;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+.driverInfo_text .driver_score{
+    display: flex;
+    flex-direction: row;
+}
+
+.driver_score #score{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.rating_star input[type="radio"] {
+    display: none;
+}
+
+.star {
+    cursor: pointer;
+    transition: color 200ms;
+    margin: 10px;
+}
+.rating {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 10px;
+    width: 400px;
+    height: 150px;
+}
+.rating .rating_star {
+    margin: 20px 0 0;
+    text-align: center;
+    width: 400px;
+    height: 100px;
+}
+.rating .rating_button{
+    text-align: center;
+    margin: 0;
+}
+#btn_rating:disabled {
+    cursor: not-allowed;
+}
+.driver_tab {
+    font-size: 25px;
+    padding: 15px 10px 10px;
+    width: 40px;
+    height: 150px;
+    margin: 0 ;
+    text-align: center;
+    border-radius: 7px;
+    right: 0;
+    background-color: #A8C2A1;
+}
+
+.bus_info {
+    display: flex;
+    flex-direction: row;
+}
+
+.bus_info table{
+    margin: 10px 10px 10px 30px;
+    width: 398px;
+    font-size: 20px;
+}
+.bus_info table td{
+    padding: 15px 10px;
+}
+
+.busInfo_tab {
+    font-size: 25px;
+    padding: 15px 10px 10px;
+    width: 40px;
+    height: 140px;
+    margin: 0;
+    text-align: center;
+    border-radius: 7px;
+    right: 0;
+    background-color: #2DA5C9;
+}

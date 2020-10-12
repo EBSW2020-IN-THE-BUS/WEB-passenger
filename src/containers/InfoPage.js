@@ -2,38 +2,30 @@ import React, { Component, Fragment } from 'react';
 import { bindActionCreators } from 'redux';
 import { withRouter } from 'react-router';
 import { connect } from 'react-redux';
-import * as basicActions from 'store/modules/basic';
 import * as passengerActions from 'store/modules/passenger';
+import * as basicActions from 'store/modules/basic';
 import {
-    RouteMap,
+    Info,
     FooterBox
   } from "components";
-import { FaDAndDBeyond } from 'react-icons/fa';
+  
+class InfoPage extends Component {
 
-class RouteMapPage extends Component {
     _fbSelect = (idx) => {
         const { basicActions } = this.props;
         basicActions.fbSelect(idx);
     }
-    
     componentDidMount() {
-        const { passengerActions} = this.props;
-        const routeId =200000279;
-        passengerActions.getBusRouteStationList(routeId);
-        
     }
-
+    
     render() {
         const {
-            select,
-            busRouteStationList
+            select, 
         } = this.props;
+
         return (
-            
-           
             <Fragment>
-                <RouteMap busRouteStationList={busRouteStationList}/>
-                
+                <Info />
                 <FooterBox select={select} fbSelect={this._fbSelect}/>
             </Fragment>
         )
@@ -46,12 +38,12 @@ export default withRouter(
         // props 로 넣어줄 스토어 상태값
         state => ({
             select: state.basic.getIn(['basic', 'select']),
-            busRouteStationList: state.passenger.get('busRouteStationList'),
+            input: state.passenger.get('input'),
         }),
         // props 로 넣어줄 액션 생성함수
         dispatch => ({
             basicActions: bindActionCreators(basicActions, dispatch),
-            passengerActions: bindActionCreators(passengerActions, dispatch)
+            passengerActions : bindActionCreators(passengerActions, dispatch),
         })
-    )(RouteMapPage)
+    )(InfoPage)
 )
