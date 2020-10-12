@@ -12,7 +12,7 @@ export const fbSelect = createAction(FB_SELECT);
 const initialState = Map({
     basic: Map({
         select: 1
-    }),
+    })
 });
 
 /*--------reducer--------*/
@@ -20,5 +20,4 @@ export default handleActions({
     [FB_SELECT]: (state, action) => {
         return state.setIn(['basic', 'select'], action.payload);
     },
-    
 }, initialState);

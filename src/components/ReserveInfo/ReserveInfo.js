@@ -1,25 +1,81 @@
-import React, { Fragment, useEffect } from 'react';
+import React from 'react';
 import './ReserveInfo.css';
 import Input from '@enact/moonstone/Input';
 import Dialog from '@enact/moonstone/Dialog';
 import Button from '@enact/moonstone/Button';
+import Scroller from '@enact/ui/Scroller';
+import {
+    ReserveBtn
+  } from "components";
 
-const ReserveInfo = ({  disabled, value, onChange, onClick,state }) => {
-    let color = disabled ? '#EDEDED' : 'white';
-    
+const ReserveInfo = ({color,busRouteStationList,anonymous,station,onChange,station1,station2,station3,station4,station5,station6,onClick,leaveStation,arriveTime}) => {
+    const stations = [ station1,  station2 , station3, station4, station5, station6 ]  
+    const stationList = stations.map(
+        (sta,idx) => (
+                <label key={idx}>
+                
+                <span>{sta}</span>
+                <input
+                type="radio"
+                name={sta}
+                value={sta}
+                checked={station === sta}
+                onChange={onChange}
+                />
+            </label>
+        )
+    )
+
     return (
         <div className="ReserveInfo">
             <div className="out-background">
                 <div className="inside-background">
-
-
-                <Input onChange={onChange} size="small" type="text" value={value}/>
-                    <button 
-                    id="reg_btn"
-                    onClick={ onClick }
-                    >
-                    확인
-                    </button>
+                    <div className="left">
+                        <Scroller
+                          horizontalScrollbar="auto"
+                          onScrollStart={anonymous}
+                          onScrollStop={anonymous}
+                        >
+                        {
+                                    busRouteStationList.map((item,idx) =>{
+                                        return(
+                                            <label>
+                                            <span> {item.get('stationName')}</span>
+                                            <input
+                                            type="radio"
+                                            name={item.get('stationName')}
+                                            value={item.get('stationName')}
+                                            
+                                            onChange={onChange}
+                                            />
+                        </label>
+                                                )
+                            })
+                        }
+                        {/* <label>
+                            <span>{station5}</span>
+                            <input
+                            type="radio"
+                            name="station5"
+                            value={station5}
+                            checked={station === station5}
+                            onChange={onChange}
+                            />
+                        </label> */}
+                        </Scroller>
+                    </div>
+                    <div className="right" >
+                        <div >
+                            <h1>{station}</h1>
+                            {/* <h1>광화문</h1> */}
+                            <span><p>남은 정류장 : {leaveStation}</p></span>
+                            <span><p>도착 예정 시간 : {arriveTime}</p></span>
+                            {/* <button id="reserve_btn" style={{backgroundColor: color}} onClick={onClick}> <strong>예 약 하 기</strong> </button>     */}
+                            
+                            <ReserveBtn onClick={onClick} context='하차 예약'/>
+                        </div>
+                            
+                    </div>
                 </div>
             </div>
         </div>

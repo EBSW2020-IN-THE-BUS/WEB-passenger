@@ -1,0 +1,30 @@
+.ReserveBtn{
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 0;
+}
+
+.ReserveBtn .inner{
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: #A9C77A;
+    color: #2A2C2B;
+    padding: 3px 50px 3px 50px;
+    width: 400px;
+    height: 70px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Noto Sans', sans-serif;
+    cursor: pointer;
+    margin-top: 15px;
+    display: inline-block;
+}
+.Button_button__2BFL3.Button_small__G9cmS {
+    max-width : 28.75rem;
+}

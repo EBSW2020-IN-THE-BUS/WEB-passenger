@@ -21,28 +21,100 @@ html, body {
     top: 20px;
     margin: 0 20px;
     width: 954px;
-    height: 363px;
+    height: 363px; 
 }
 
-.inside-background h1 {
-    text-align: center;
+.RouteMap .inside-background h1 {
+    text-align: left;
     font-size: 40px;
-    margin: 0;
+    margin: 0 0 0 170px;
 }
 
 .route-line {
-    width: 100%;
+    height: 248px;
 }
 .useScroll_scroll__1bR1m .useScroll_scrollInnerContainer__2E6ME{
-    height: 300px;
+    height:248px;
 }
 .useScroll_scrollContentWrapper__1mrFS {
-    height: 300px;
+    height: 248px;
 }
-.inside-background .route-btn {
-    width: 100%;
-    height: 200px;
-    margin-top: 50px;
-     border: 7px solid #1CBFF0;
-     border-radius: 100px;
+
+.RouteMap .box {
+    display: flex;
+    flex-direction: row;
+}
+
+.RouteMap .left-box {
+background-color: #E2EECE;
+border-top-left-radius: 7px;
+border-top-right-radius: 7px;
+margin: 19px 0 0 0;
+width: 470px;
+height: 290px;
+}
+
+.RouteMap .right-box {
+    /* background-color: #E2EECE; */
+    border-radius: 7px;
+    margin: 19px 0 0 15px;
+    width: 470px;
+    height: 350px;
+}
+
+
+.RouteMap .left-box h2{
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    color: white;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    background-color: #0093D0;
+}
+
+.RouteMap .right-box #map{
+    margin: 0;
+    top: -70px;
+    width: 470px;
+    height: 360px;
+    border-radius: 7px;
+}
+ol {
+    display: block;
+    list-style-type: decimal;
+    margin: 0;
+    padding: 0;
+    
+}
+li {
+    list-style: none; 
+    display: list-item;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    height: 22px;
+    font-size: 18px;
+    padding:15px;
+    background-color: white;
+    border: 1px solid #eee;
+    text-align: -webkit-match-parent;
+}
+.route-line #line {
+    width: 3px;
+    height: 247px;
+    z-index: 99999;
+    background-color: #00B7EE;
+    position: absolute;
+    left: 455px;
+    top: 130px;
+}
+li p {
+    text-align: left;
+    width: 300px;
+    margin: 0;
+}
+li img {
+    position: absolute;
+    left: 430px;
 }

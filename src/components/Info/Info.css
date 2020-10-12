@@ -1,0 +1,96 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.Info .out-background {
+    background-color: #9EC75D;
+    width: 1024px;
+    height: 600px;
+    padding: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Info .inside-background {
+    background-color: white;
+    border-radius: 7px;
+    padding: 15px;
+    position: relative;
+    top: 20px;
+    margin: 0 20px;
+    width: 954px;
+    height: 363px;
+}
+.Info h1 {
+    margin: 5px 0 0 0;
+    text-align: center;
+    font-size: 38px;
+}
+.Info .content-body {
+    display: flex;
+    flex-direction: row;
+}
+.Info .content-body .rule {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.rule .rule-list{
+    display: flex;
+    flex-direction: row;
+    margin: 8px 30px 8px 10px;
+}
+
+.rule-list #num {
+    width: 45px;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0;
+    background-color: #9EC75D;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.rule-list #text {
+    width: 380px;
+    height: 30px;
+    font-size: 21px;
+    text-align: left;
+    padding: 5px 5px;
+    background-color: #E2EECE;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.content-body .charge{
+    margin-top: 28px;
+    background-color: #E2EECE;
+    width: 420px;
+    height: 190px;
+    border-radius: 5px;
+}
+
+.charge table{
+    width: 420px;
+    height: 150px;
+    text-align: center;
+}
+th, td{
+    border-bottom: 1px solid rgb(240, 240, 240);
+}
+#head{
+    width: 420px;
+    height: 30px;
+    font-size: 20px;
+    padding: 3px 0;
+    text-align: center;
+    background-color: #9EC75D;
+    
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}

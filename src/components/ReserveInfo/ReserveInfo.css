@@ -22,8 +22,57 @@ html, body {
     margin: 0 20px;
     width: 954px;
     height: 363px;
+    display: flex;
+    flex-direction: row;
 }
 
-input {
-    background-color: blanchedalmond;
+.left {
+    flex: 1;
+    background-color: #E2EECE;
+    margin: 0 7px;
+    border-radius: 7px;
+}
+.left label {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+.left span{
+    font-size: 25px;
+    margin: 10px;
+    flex: 1;
+}
+.left input {
+    margin: 10px;
+    width: 27px;
+    height: 27px;
+}
+.useScroll_scrollContentWrapper__1mrFS {
+    height: 100%;
+}
+.right {
+    flex: 1;
+    background-color: #E2EECE;
+    margin: 0 7px;
+    border-radius: 7px;
+}
+
+.right h1 {
+    text-align: center;
+    margin: 30px 0 50px;
+}
+
+.right p {
+    font-size: 27px;
+    margin: 15px 40px 20px;
+}
+.right #reserve_btn {
+    background-color: #A8C2A1;
+    font-size: 30px;
+    border-radius: 5px;
+    border: 0;
+    width:430px;
+    height:70px;
+    margin: 30px 17px;
+    cursor: pointer;
 }
